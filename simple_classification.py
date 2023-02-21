@@ -13,8 +13,8 @@ output_layer = compiled_model.output(0)
 N, C, H, W = input_layer.shape
 
 # Load input
-image = cv2.imread(filename="images/cropped_ok.jpg")
-#image = cv2.imread(filename="images/cropped_bad.jpg")
+#image = cv2.imread(filename="images/cropped_ok.jpg")
+image = cv2.imread(filename="images/cropped_bad.jpg")
 
 # Pre-processing - resize & reshape to the network input shape
 resized_image = cv2.resize(src=image, dsize=(W, H))
